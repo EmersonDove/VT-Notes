@@ -127,7 +127,7 @@
 1. No current flows into the input pins
 2. Through the use of negative feedback, the op-amp will ensure that both input voltages are equal. Therefore the input difference voltage equals zero.
 
-![Op-Amp](http://emersondove.com/notes/Intro%20to%20ECE/Images/Op-Amp.png)
+![Op-Amp](http://emersondove.com/notes/ECE%201004%20-%20Intro%20to%20ECE/Images/Op-Amp.png)
 
 **Inverting op-amp equation**
 
@@ -149,13 +149,13 @@ Voltage follower has the $V_{out}$ attached directly to the - input. This provid
 
 - Using an inverting op-amp, multiple voltages can be added.
 
-![Op-Amp](http://emersondove.com/notes/Intro%20to%20ECE/Images/Summing_Op-Amp.png)
+![Op-Amp](http://emersondove.com/notes/ECE%201004%20-%20Intro%20to%20ECE/Images/Summing_Op-Amp.png)
 
 - $R_{in}$ can vary
 
 ## Differential Amplifier
 
-![Op-Amp](http://emersondove.com/notes/Intro%20to%20ECE/Images/Difference_Op-Amp.png)
+![Op-Amp](http://emersondove.com/notes/ECE%201004%20-%20Intro%20to%20ECE/Images/Difference_Op-Amp.png)
 
 - If all resistors are equal then you get $v_0 = (v_2-v_1)$
 

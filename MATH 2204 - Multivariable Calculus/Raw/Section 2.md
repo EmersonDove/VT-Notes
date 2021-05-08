@@ -32,4 +32,4 @@ y=\rho \sin(\phi) \sin(\theta)\\
 z=\rho \cos(\phi)\\
 $$
 
-![Integration Labels](/MATH%202204%20-%20Multivariable%20Calculus/Images/Integration%20Labels.png)
+![Integration Labels](http://emersondove.com/notes/MATH%202204%20-%20Multivariable%20Calculus/Images/Integration%20Labels.png)

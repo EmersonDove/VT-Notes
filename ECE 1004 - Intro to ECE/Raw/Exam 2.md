@@ -16,7 +16,7 @@
 
 ## Overview
 
-![Capacitor Overview](http://emersondove.com/notes/Intro%20to%20ECE/Images/Capacitor_Overview.png)
+![Capacitor Overview](http://emersondove.com/notes/ECE%201004%20-%20Intro%20to%20ECE/Images/Capacitor_Overview.png)
 
 ## Types
 
