@@ -58,6 +58,7 @@
 - Many variations exist
 - Constructed from two inverters
 - The output from inverter 1 is tied to the input of the other
+- Asynchronous inputs on an SR flip-flop do not depend on a clock pulse to affect the output
 
 ### Truth Table (async)
 
@@ -98,6 +99,7 @@
 - Input resistance is infinity
 - Output resistance is zero
 - Voltage difference at input is greatly amplified by gain factor "A"
+- Saturation is called rail
 
 ## Gains
 
@@ -145,7 +147,9 @@ $A_v = 1+\frac{R_b}{R_a}$
 
 Voltage follower has the $V_{out}$ attached directly to the - input. This provides a lot of current gain.
 
-### Summing Op-Amp
+- Mainly used to improve/reduce loading effects
+
+## Summing Op-Amp
 
 - Using an inverting op-amp, multiple voltages can be added.
 
@@ -158,4 +162,5 @@ Voltage follower has the $V_{out}$ attached directly to the - input. This provid
 ![Op-Amp](http://emersondove.com/notes/ECE%201004%20-%20Intro%20to%20ECE/Images/Difference_Op-Amp.png)
 
 - If all resistors are equal then you get $v_0 = (v_2-v_1)$
+- Common-mode rejection is when the two inputs are the same but the output is zero.
 

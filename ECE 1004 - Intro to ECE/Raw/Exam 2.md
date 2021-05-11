@@ -38,6 +38,10 @@
 - Often called "bypass" capacitors
 - A variety can be used, typically 0.1 to 1,000 $\mu F$
 
+## Capacitors in Parallel
+
+- Called **banks**
+
 ## General Formulas
 
 ### Relationship
