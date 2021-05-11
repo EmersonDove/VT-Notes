@@ -129,5 +129,5 @@ Same manner as resistors.
 
 - If 2 Two's Complement numbers are added, and they both have the same sign (both positive or both negative), then overflow occurs if and only if the result has the opposite sign. Overflow never occurs when adding operands with different signs.
   - Adding two positive numbers must give a positive result
-  - Adding tow negative numbers must give a negative result
+  - Adding two negative numbers must give a negative result
 
