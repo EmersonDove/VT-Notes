@@ -1,0 +1,10 @@
+{
+  "title": "VT Notes",
+  "url": "https://notes.emersondove.com",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "EmersonDove/VT-Notes",
+  "twitter": "@EmersonDove"
+}

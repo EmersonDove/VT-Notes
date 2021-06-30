@@ -1,0 +1,26 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Notes site for simple exporting and viewing",
+  "main": "index.js",
+  "repository": "https://github.com/EmersonDove/VT-Notes.git",
+  "author": "Emerson <edove@vt.edu>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "MINIMAL=1 CSB=1 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "nuxt generate && firebase deploy --only hosting:docs"
+  },
+  "dependencies": {
+    "@babel/preset-env": "7.12.17",
+    "@nuxt/content-theme-docs": "0.7.2",
+    "nuxt": "2.14.7",
+    "rehype-katex": "^5.0.0",
+    "remark-math": "^4.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0"
+  }
+}
