@@ -2,7 +2,7 @@ import theme from "@nuxt/content-theme-docs";
 
 export default theme({
     docs: {
-        primaryColor: '#79eea6'
+        primaryColor: '#57C682'
     },
     head: {
         link: [
