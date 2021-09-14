@@ -1,6 +1,6 @@
 ---
 title: Quiz 4
-position: 5
+position: 4
 category: PHYS 2306 - E&M
 ---
 
