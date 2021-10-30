@@ -83,6 +83,7 @@ $$
 |H(f)|_{dB} = 20\log|H(f)|
 $$
 
+Cascaded filters can also be multiplied together.
 
 ## Second Order Filters
 
