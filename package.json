@@ -4,7 +4,7 @@
   "description": "Notes site for simple exporting and viewing",
   "main": "index.js",
   "repository": "https://github.com/EmersonDove/VT-Notes.git",
-  "author": "Emerson <edove@vt.edu>",
+  "author": "Emerson",
   "license": "MIT",
   "scripts": {
     "dev": "MINIMAL=1 CSB=1 nuxt",
