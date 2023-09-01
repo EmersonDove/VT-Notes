@@ -72,3 +72,54 @@ This is true for extrinsic and intrinsic: $n_i = BT^{3/2}e^\frac{-E_g}{2kT}$
 
 This is true for extrinsic and intrinsic: $n\times p = n_i^2$ and **$n=p=n_i$ is a special case of the first equation.**
 
+What you'll notice this describes though is that for example the dominant carrier can be significantly greater than the intrinsic carrier ($N_D \gg n_i$) and the opposite is true for the opposite doping. What is this saying physically? Physically, the intrinsic carrier concentration sits as an "intermediate" value because it's governed by the probability of a rare event (thermal excitation across a large energy gap) compared to the more "guaranteed" carrier introduction by dopants.
+
+The important bit here is that the intrinsic carrier concentration,$n_i$, is inherent to the semiconductor material itself and is determined by  its atomic properties, particularly the bandgap. It represents the  number of carriers (electrons and holes) present in the pure  semiconductor due to thermal excitations. This concentration doesn't  change due to doping, but the presence of dopants can vastly increase  the total number of free carriers, overshadowing the intrinsic  concentration in terms of magnitude.
+
+This is why the $\approx$ is so critical in $n\approx N_d$ or $p\approx N_A$ because the intrinsic property DOES change during doping it's just incredibly small, so we end up in a situation where the intrinsic carrier property is basically decoupled from the doping.
+
+## Current in the semiconductor
+
+We have two types of currents
+
+### Drift Currents
+
+TODO
+
+### Diffusion Currents
+
+Electron diffusion current: $J_n = eD_n \frac{dn}{dx}$
+
+Hole diffusion current: $J_p = -e D_p \frac{dp}{dx}$
+
+What do these mean? Well they're pretty straightforward actually. Let's take $J_n$ which is of course the "current density." It represents the amount of current (due to the movement of electrons)  per unit cross-sectional area of the semiconductor. Physically, this is a measure of how many electrons are moving across a given area in  response to concentration gradients. **The unit of current density is $A/cm^2$**, which describe a current per unit area. **$D_n$** is the diffusion coefficient for elections which describe how rapidly electrons spread out, it's unit is $cm^2/s$.
+
+It's a bit hard to reason about these equations because they describe a "snapshot" of the diffusion at some given moment.
+
+### Total Current
+
+Really simple, the way you find the total current in the semiconductor is you just add the previous equations in both drift, diffusion, hole and electrons!
+
+Current: $j=j_n+j_p$
+
+And then break it down more to each diffusion and drift component
+
+$j_n=q\mu_nnE+qD_n\frac{\partial n}{\partial x}$
+
+$j_p = q\mu_p pE - qD_p \frac{\partial p}{\partial x}$
+
+Notice theres no time domain...get rekt! You can use Fick's second law for a time domain but I don't think thats in scope.
+
+# On the PN Junction
+
+Now when you put two of these oppositely doped semiconductors together you get a PN junction. ~~Stuff happens where they annihilate~~.
+
+### PN Junctions have a voltage potential
+
+Building off of what we learned previously
+
+$V_{bi}=\frac{kT}{e}\ln({\frac{N_aN_d}{n^2_i}})$
+
+Generally we can simplify this a bit because at room temperature $\frac{kT}{e}=0.026V=V_T$
+
+So $V_{bi}=V_T\ln({\frac{N_aN_d}{n_i^2}})$
