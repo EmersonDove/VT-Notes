@@ -84,7 +84,37 @@ We have two types of currents
 
 ### Drift Currents
 
-TODO
+Electron drift velocity $v_{dn} = -\mu _n E$ where $\mu_n$ is electron mobility and $E$ is electric field
+
+Electron drift current density: $J_n = -env_{dn} = -en(-\mu_n E) = + en\mu_n E$
+
+Then of course you can do the same with holes
+
+Hole drift velocity: $v_{dp} = + \mu_p E$ where $\mu_p$ is the hole mobility
+
+And of course hole drift current density: $J_p = epv_{dp} = ep(+\mu_p E) = +ep\mu_p E$.
+
+Then of course summing them gives **total drift current density**
+
+$J=en\mu_n E + ep\mu_p E = \sigma E = \frac{1}{\rho}E$
+
+The **total conductivity**
+
+$\sigma = en\mu_n + ep\mu_p$
+
+And rember $\frac{1}{\rho}$ is the resistivity.
+
+So thats a lot of equations but we can break this down conceptually. Remember that drift velocity is the velocity of charged particles inside the electric field $E$. In this case the velocity is quite straightforward. Lets look $v_{dn} = -\mu_n E$. The hard math is basically done for us with this equation, its basically saying that the speed that charge carriers move $v_{dn}$ is influenced linearly by $E$ at proportion of $\mu_n$. And this is super literal, the unit of $v_{dn}$ is just $m/s$.
+
+That sets the groundwork for the context equations. Now for current density, its fairly easy to see that to know the # electrons passing through some 2d surface area literally is:
+
+The speed of the electrons $\times$ the number of electrons $\times$ the charge of each electron (to convert to current).
+
+And just for fun remember that the elementary charge = $1.602\times 10^{19}$.
+
+And then obviously because both holes and electrons can carry charge, the current is both of them summed together!
+
+A big note here is that a lot of complexity is hiding here. The composition of the currents change as you look across the diode, the
 
 ### Diffusion Currents
 
@@ -110,16 +140,3 @@ $j_p = q\mu_p pE - qD_p \frac{\partial p}{\partial x}$
 
 Notice theres no time domain...get rekt! You can use Fick's second law for a time domain but I don't think thats in scope.
 
-# On the PN Junction
-
-Now when you put two of these oppositely doped semiconductors together you get a PN junction. ~~Stuff happens where they annihilate~~.
-
-### PN Junctions have a voltage potential
-
-Building off of what we learned previously
-
-$V_{bi}=\frac{kT}{e}\ln({\frac{N_aN_d}{n^2_i}})$
-
-Generally we can simplify this a bit because at room temperature $\frac{kT}{e}=0.026V=V_T$
-
-So $V_{bi}=V_T\ln({\frac{N_aN_d}{n_i^2}})$
