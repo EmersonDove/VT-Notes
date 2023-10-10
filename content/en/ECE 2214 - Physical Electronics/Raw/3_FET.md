@@ -58,19 +58,11 @@ Okay but theres a ton of modes there, lets break them down
 
 ### Enhancement Mode
 
-- Material / manufacturing property
-- **Enhancement Mode**: Refers to a MOSFET that is normally "off" when no gate voltage is applied. It requires a gate voltage to "enhance" or create a channel for current to flow between the source and drain. This is similar to turning a switch "on."
-- **NMOS**
-  - Enhancement mode is when its on and current is flowing and the input is a typical positive voltage.
-- **PMOS**
-  - Enhancement mode is when its on and current is allowed to flow but the input is a negative voltage
-- **Enhancement is the mode when current is allowed through the FET**
+- Material / manufacturing property (see table below)
 
 ### Depletion Mode
 
-- Material / manufacturing property
-- **Depletion Mode**: Refers to a MOSFET that is normally "on" with a natural channel allowing current flow. Applying a gate voltage "depletes" or reduces the channel, controlling or even cutting off the current flow, similar to turning a switch "off."
-- **Depletion mode is when it really doesn't want current through the FET**
+- Material / manufacturing property (see table below)
 
 ![regions of operation](./regions of operation.png)
 
