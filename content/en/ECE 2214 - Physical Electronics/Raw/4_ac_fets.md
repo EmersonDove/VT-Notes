@@ -14,6 +14,7 @@ In DC analysis
 
 - **Channel length modulation was ignored but isn't now**. We assume that once the MOSFET is in saturation, the drain current is constant regardless of $V_{DS}$. Why did we ignore? Screw you thats why basically the textbook decided it wasn't important but it does play a role in DC analysis.
   - So really the full equation all along was $i_D = K_n(v_{GS}-V_{TN})^2(1+\lambda V_{DS})$ but we were assuming $\lambda=0$.
+  - Keep in mind this is physically saying that the current increases *just a bit more* if there is some change in channel length.
 - **Output resistance $r_o$ was also ignored until now**. The output resistance $r_o$  represents the MOSFET's intrinsic resistance between the drain and  source terminals when it's operating in the saturation region. It's  defined as the change in $V_{DS}$ for a given change in $i_D$ in terms of $\lambda$, it's given by: $r_o = (\lambda \cdot i_D)^{-1}$. This makes sense because as the current goes up, the resistance has to have been lower. Obviously this equation goes away when we were assuming $\lambda=0$ but it doesn't now! $r_o$  is the intrinsic output resistance of the MOSFET when it's in the  saturation region. It represents the resistance between the drain and  source terminals of the MOSFET, due to the MOSFET's own internal  characteristics. In other words, when you think of the MOSFET operating in saturation,  you can envision it not just as an ideal current source but as a current source in parallel with a resistance $r_o$. This resistance comes into play due to non-idealities like channel length modulation.
   - $r_o$ is kind of funky because it only really matters on the output. When the MOSFET is simplified to be a current source in series with a resistance, the resistance is this value. It's simply not represented on the input side.
 
@@ -25,31 +26,56 @@ Imagine a hose with water flowing through it. Ideally, once the hose is  fully o
 
 In the world of MOSFETs, $\lambda$ represents how much the channel length (or effective channel length) changes with a change in $V_{DS}$.  A higher $\lambda$ means the current $i_D$ is more sensitive to changes in $V_{DS}$.
 
+To bring this back to reality for a second, we've really seen graphs of $i_D$ vs $v_{DS}$ that plateau in saturation. The reality is that it does basically plateau but it does keep rising withs some small slope.
+
 ## Transconductance
 
 Oooh scary what is this? Transconductance quantifies the sensitivity of the current flowing through a transistor (usually denoted as $i_D$). Think of $g_m$ as the "amplification ability" of the transistor itself. If you change  the gate-source voltage slightly, how much does the drain current change in response? A higher gmgm means the transistor is more sensitive and can produce larger changes in $i_d$ for smaller changes in $v_{GS}$.
 
 Unit: Siemens
 
-## Output Resistance
+## NMOS Common-Source Circuit
 
-Output of what?
+### Voltage gain for Common Source (with no source resistor)
 
-## Voltage gain for Common Source
+**Voltage** Gain (a ratio)
 
-$A_v = -g_m \times (R_D || r_0)$
+**Small signal output voltage:** Actual output voltage in terms of the input.
 
+![resistor_load](./resistor_load.png)
 
+$V_0 = -g_m \times V_{GSQ}(R_D || r_0)$
 
+$A_v =\frac{V_o}{V_i}= -g_m \times (R_D || r_0)$
 
-
-
-
-$-i_D =K_m[(v_{GS}-V_{TM})^2(1+\lambda v_{DS})]$
-
-$g_m = \frac{i_d}{v_{gs}}$
+$g_m=2K_n(V_{GSQ}-V_{TN})$
 
 $g_m = 2 \sqrt{K_n I_{DQ}}$
 
 $\frac{1}{r_o} = \lambda I_{DQ}$
 
+$i_D =K_n[(v_{GS}-V_{Tn})^2(1+\lambda v_{DS})]$
+
+## Common Source Small Signal Amplifier
+
+![common-source-coupled](./common-source-coupled.png)
+
+The input resistance equation changes a bit 
+
+$R_i = R_1 || R_2$
+
+$R_o=R_D || r_o$
+
+$A_v = -g_m (r_0 || R_D)(\frac{R_i}{R_i +R_{Si}})$
+
+$g_m=K_n(V_{GSQ}-V_{TN})$
+
+## Common Source with Source Resistor
+
+![source follower](./source follower.png)
+
+$A_v = \frac{R_S || r_o}{\frac{1}{g_m} +R_S || r_0}\frac{R_i}{R_i +R_{Si}}$
+
+$R_o = \frac{1}{g_m} || R_S || r_o = \frac{V_X}{I_X}$
+
+$R_i = R_1 || R_2$

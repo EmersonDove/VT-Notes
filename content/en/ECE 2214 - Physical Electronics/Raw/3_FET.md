@@ -79,7 +79,7 @@ In the context of transistors "ON" refers to the transistor being in a conductin
 
 For NMOS
 
-$K_n = \frac{W\mu_n C_{ox}}{2L} = k'_n \frac{W}{2l}$
+$K_n = \frac{W\mu_n C_{ox}}{2L} = k'_n \frac{W}{2L}$
 
 For PMOS
 
